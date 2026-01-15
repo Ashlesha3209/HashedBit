@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <title>PizzaExpress</title>
+</head>
+<body>
+  <!-- Header: left logo, right social links -->
+  <header class="site-header">
+    <div class="logo">
+      <!-- Simple inline SVG pizza logo -->
+      <svg width="48" height="48" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <circle cx="12" cy="12" r="10" fill="#ffcc4d"></circle>
+        <path d="M4 20c4-6 8-9 8-9s4 3 8 9" fill="#ff813f"></path>
+        <circle cx="10" cy="11" r="1.2" fill="#c0392b"></circle>
+        <circle cx="14" cy="13" r="1.2" fill="#c0392b"></circle>
+      </svg>
+      <h1>PizzaExpress</h1>
+    </div>
+
+    <div class="socials" aria-label="Social links">
+      <a href="#" title="Twitter" aria-label="Twitter">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="#1da1f2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 22.43.36a9.06 9.06 0 0 1-2.88 1.1A4.52 4.52 0 0 0 16.11 0c-2.5 0-4.51 2.2-3.97 4.6A12.9 12.9 0 0 1 1.64 1.15 4.48 4.48 0 0 0 3.08 6.9a4.41 4.41 0 0 1-2.04-.56v.06A4.5 4.5 0 0 0 4.5 11a4.5 4.5 0 0 1-2.03.08A4.5 4.5 0 0 0 6.5 15.67a9.06 9.06 0 0 1-6.67 1.86A12.78 12.78 0 0 0 7.29 21c8.49 0 13.14-7.02 12.95-13.32A9.22 9.22 0 0 0 23 3z"/></svg>
+      </a>
+      <a href="#" title="Facebook" aria-label="Facebook">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="#3b5998"><path d="M22 12a10 10 0 1 0-11.5 9.87v-6.99H8.9V12h1.6V9.8c0-1.6.95-2.5 2.4-2.5.7 0 1.45.12 1.45.12v1.6h-.82c-.8 0-1.05.5-1.05 1.02V12h1.78l-.28 2.88h-1.5v6.99A10 10 0 0 0 22 12"/></svg>
+      </a>
+      <a href="#" title="Instagram" aria-label="Instagram">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="#e1306c"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5.5a4.5 4.5 0 1 0 .001 9.001A4.5 4.5 0 0 0 12 7.5zm4.9-2.6a1.1 1.1 0 1 1-2.2-.001 1.1 1.1 0 0 1 2.2.001z"/></svg>
+      </a>
+    </div>
+  </header>
+
+  <!-- Menubar -->
+  <nav class="main-nav" role="navigation" aria-label="Main menu">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="layout">
+    <!-- Sidebar: Custom Data -->
+    <aside class="sidebar">
+      <h2>Custom Data</h2>
+      <ul>
+        <li><strong>Open:</strong> Daily 11am - 11pm</li>
+        <li><strong>Phone:</strong> 123-456-7890</li>
+        <li><strong>Specials:</strong> 2 pizzas for 500rs</li>
+      </ul>
+      <div class="cta">
+        <a href="#" class="btn">Order Now</a>
+      </div>
+    </aside>
+
+    <!-- Main content: Three boxes -->
+    <main class="content">
+      <h2>Our Pizzas</h2>
+      <div class="cards">
+        <article class="card">
+          <img src="image3.png" alt="Margherita pizza">
+          <h3>Margherita</h3>
+          <p>Classic tomato sauce, fresh mozzarella and basil. Simple and delicious.</p>
+          <a class="btn small" href="#">Order</a>
+        </article>
+
+        <article class="card">
+          <img src="image2.png" alt="Pepperoni pizza">
+          <h3>Pepperoni Feast</h3>
+          <p>Loaded with pepperoni and extra cheese for the ultimate indulgence.</p>
+          <a class="btn small" href="#">Order</a>
+        </article>
+
+        <article class="card">
+          <img src="image.png" alt="Veggie pizza">
+          <h3>Garden Veggie</h3>
+          <p>Bell peppers, olives, onions, mushrooms and tomatoes on a herb crust.</p>
+          <a class="btn small" href="#">Order</a>
+        </article>
+      </div>
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>© 2026 PizzaExpress. All rights reserved.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Div on Button Click</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+            padding: 20px;
+        }
+
+        .controls {
+            margin-bottom: 20px;
+        }
+
+        input {
+            padding: 6px;
+            margin: 5px;
+            width: 120px;
+        }
+
+        button {
+            padding: 8px 15px;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #container {
+            border: 2px dashed #555;
+            padding: 20px;
+            min-height: 200px;
+            background: white;
+        }
+
+        #container div {
+            background-color: #2196F3;
+            color: white;
+            margin: 10px 0;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Create Div on Button Click</h2>
+
+<div class="controls">
+    <input type="number" id="width" placeholder="Width">
+    <input type="number" id="height" placeholder="Height">
+    <input type="text" id="text" placeholder="Text">
+    <button onclick="handleCreate()">Create Div</button>
+</div>
+
+<div id="container"></div>
+
+<script>
+    
+    function createDiv(width, height, text) {
+        const div = document.createElement("div");
+
+        div.style.width = width + "px";
+        div.style.height = height + "px";
+        div.textContent = text;
+
+        document.getElementById("container").appendChild(div);
+    }
+
+    
+    function handleCreate() {
+        const w = document.getElementById("width").value;
+        const h = document.getElementById("height").value;
+        const t = document.getElementById("text").value;
+
+        createDiv(w, h, t);
+    }
+
+    Window.createDiv = createDiv;
+</script>
+
+</body>
+</html>
