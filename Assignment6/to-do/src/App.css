@@ -1,0 +1,61 @@
+body {
+  background: #f3f3f3;
+  font-family: Arial;
+}
+
+.todo-app {
+  width: 350px;
+  margin: 80px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #ccc;
+  text-align: center;
+}
+
+.input-box {
+  display: flex;
+  gap: 10px;
+}
+
+input {
+  flex: 1;
+  padding: 8px;
+}
+
+button {
+  padding: 8px 12px;
+  cursor: pointer;
+  border: none;
+  background: #2196f3;
+  color: white;
+  border-radius: 4px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  background: #eee;
+  margin-bottom: 6px;
+  border-radius: 4px;
+}
+
+li span {
+  cursor: pointer;
+}
+
+li.done span {
+  text-decoration: line-through;
+  color: gray;
+}
+
+li button {
+  background: red;
+}
